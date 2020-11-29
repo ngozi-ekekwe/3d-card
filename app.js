@@ -5,15 +5,16 @@ const sneaker = document.querySelector(".sneaker img");
 const purchase = document.querySelector(".purchase button");
 const description = document.querySelector(".info h3");
 const sizes = document.querySelector(".sizes");
+const body = document.querySelector('body')
 
-container.addEventListener("mousemove", (event) => {
+body.addEventListener("mousemove", (event) => {
   let Xaxis = (window.innerWidth / 2 - event.pageX) / 25;
   let Yaxis = (window.innerHeight / 2 - event.pageY) / 25;
   card.style.transform = `rotateY(${Xaxis}deg) rotateX(${Yaxis}deg)`;
 });
 
 //Animate in
-container.addEventListener("mouseenter", (event) => {
+body.addEventListener("mouseenter", (event) => {
   card.style.transition = 'none';
   // pop out
   title.style.transform = "translateZ(150px)";
@@ -24,7 +25,7 @@ container.addEventListener("mouseenter", (event) => {
 });
 
 //Animate out
-container.addEventListener("mouseleave", (event) => {
+body.addEventListener("mouseleave", (event) => {
   card.style.transition = `all 0.5s ease`;
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
   // pop back
