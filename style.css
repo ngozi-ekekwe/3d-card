@@ -21,8 +21,8 @@ body {
 }
 
 .card {
-  min-height: 80vh;
-  width: 35rem;
+  min-height: 70vh;
+  width: 30rem;
   border-radius: 30px;
   padding: 0 5rem;
   transform-style: preserve-3d;
@@ -30,7 +30,7 @@ body {
 }
 
 .sneaker {
-  min-height: 35vh;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,13 +38,13 @@ body {
 
 .sneaker img {
   transition: all .75s ease;
-  width: 20rem;
+  width: 15rem;
   z-index: 2;
 }
 
 .circle {
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
   position: absolute;
   border-radius: 50%;
   z-index: 1;
@@ -52,12 +52,12 @@ body {
 }
 
 .info h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transition: all .75s ease;
 }
 
 .info h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 2rem 0;
   color: #585858;
   transition: all .75s ease;
@@ -87,7 +87,7 @@ body {
 }
 
 .purchase {
-  margin-top: 5rem;
+  margin-top: 3rem;
   transition: all .75s ease;
 }
 
